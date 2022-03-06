@@ -1,0 +1,293 @@
+* , *:before, *:after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --letterEffect: goldenrod;
+  --footer-contact: #4B6587;
+
+}
+
+@font-face {
+  font-family: 'norseregular';
+  src: url('./assets/fonts/norse-webfont.woff2') format('woff2'),
+       url('./assets/fonts/norse-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'norseregularBold';
+  src: url('./assets/fonts/norsebold-webfont.woff2') format('woff2'),
+    url('./assets/fonts/norsebold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'skranjiBold';
+  src: url('./assets/fonts/skranji-bold-webfont.woff2') format('woff2'),
+    url('./assets/fonts/skranji-bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'skranjiRegular';
+  src: url('./assets/fonts/skranji-regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/skranji-regular-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 8vh;
+  background-color: #F4F4F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+}
+
+
+
+.header-div{
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.header-icons{
+  margin-left: 4vw;
+
+}
+
+.header-icons > img{
+  height: 6vh;
+  margin-left: 10px;
+}
+
+.header-icons > img:hover{
+  height: 6.5vh;
+}
+
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  height: 100%;
+}
+
+.nav-btn-option {
+  border: none;
+  background-color: inherit;
+  font-family: 'skranjiRegular';
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 20px 2vw;
+}
+
+.nav-btn-option:hover {
+  height: 100%;
+  border: none;
+  color: var(--letterEffect);
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  border-bottom: var(--letterEffect) solid 1px ;
+}
+
+
+.active_bttn {
+  color: rgb(216, 50, 50);
+  
+}
+
+
+.resto-name {
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  font-family: 'norseregular';
+  font-size: 8vh;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.golden {
+  color: var(--letterEffect);
+}
+
+
+/* //////////////////
+        MAIN_HOME
+//////////////////// */
+
+.main_home {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main_conteiner {
+  max-width: 70%;
+  max-height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: norseregularBold;
+  font-size: 6vh;
+}
+
+.main_conteiner > img {
+width: 50%;
+height: 100%;
+border-radius: 5px;
+}
+
+.table {
+  color: rgb(216, 50, 50);
+  cursor: pointer;
+}
+
+.table:hover {
+  text-decoration: underline;
+
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+
+/* //////////////////
+        FOOOTER
+//////////////////// */
+
+footer {
+  display: flex;
+  height: 18vh;
+  background-color: var(--footer-contact);
+  color: white;
+  font-family: 'norseregular';
+  font-size: 2vh;
+}
+
+.footer-div {
+  display: flex;
+}
+
+.footer-ubicacion {
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  padding: 5px;
+}
+
+.mapDiv {
+  padding-right: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.footer-network {
+  margin-left: 15px;
+  flex-direction: column;
+  align-items:flex-start;
+  max-width: 70%;
+  gap: 30px;
+  padding: 5px;
+}
+
+
+.footer-icons > a > img{
+  height: 6vh;
+  margin-left: 10px;
+}
+
+.footer-main {
+  flex: 1;
+}
+
+
+
+
+/* 
+
+  MAIN_CONTACT
+
+*/
+
+.main_contact{
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_conteiner {
+  padding: 20px;
+  align-self: center;
+  width: 55vw;
+  height: 55vh;
+  background-color: var(--footer-contact);
+  border-radius: 10px;
+  display: flex;
+  font-family: 'skranjiRegular' ;
+  color: #F4F4F2;
+}
+
+
+.info_contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.map_contact {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.box-social {
+  max-height: 33%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "skranjiRegular";
+
+}
+
+.box-social > a  {
+  height: 60%;
+  }
+.box-social > a > img {
+  height: 100%;
+  }
+  
+
